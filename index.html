@@ -1,0 +1,56 @@
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <script type="text/javascript" charset="utf-8" src="d3.min.js"></script>
+  <title></title>
+</head>
+
+<body>
+
+  <section id="jobs">
+    <div class="padder">
+      <header>
+        <h1>Top 25 
+            <select id="jobtype">
+              <option value="#strange" selected>strange</option>
+              <option value="#normal">typical</option>
+              <option value="#cheap">cheap</option>
+            </select>
+            jobs available today on amazon mechanical turk
+          </h1>
+      </header>
+      <section id="strange">
+        <p>A list of job postings or "human intelligence tasks" that least resemble
+          other jobs on <a href="http://mturk.com">Amazon Mechanical Turk</a>.</p>
+        <ol class="big-list" id="odd-jobs"></ol>
+      </section>
+
+      <section id="normal">
+        <p>A list of job postings or "human intelligence tasks" that most resemble
+          other jobs on <a href="http://mturk.com">Amazon Mechanical Turk</a>.</p>
+        <ol class="big-list" id="normal-jobs"></ol>
+      </section>
+
+      <section id="cheap">
+        <p>A list of the lowest paying job postings or "human intelligence tasks"
+          on <a href="http://mturk.com">Amazon Mechanical Turk</a>.</p>
+        <ol class="big-list" id="cheap-jobs"></ol>
+      </section>
+    </div>
+  </section>
+
+  <section id="verbs">
+    <div class="padder">
+      <header>
+        <h1>Top 25 things computers can't do today</h1>
+      </header>
+      <p>The most common imperative verbs in job titles.</p>
+      <ul class="word-list" id="imperatives"></ul>
+    </div>
+  </section>
+  <script type="text/javascript" charset="utf-8" src="main.js"></script>
+</body>
+
+</html>
