@@ -112,6 +112,7 @@ body.verbs-only .padder, body.jobs-only .padder {
 
 body.jobs-only .big-list li {
   margin: 10px;
+  margin-left: 20px;
   padding: 10px;
 }
 
