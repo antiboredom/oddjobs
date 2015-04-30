@@ -1,3 +1,13 @@
+var query = window.location.search.substring(1);
+if (query && query=='jobs') {
+  d3.select('#verbs').style('display', 'none'); 
+  d3.select('#jobs').style('width', '100%'); 
+}
+if (query && query=='verbs') {
+  d3.select('#jobs').style('display', 'none'); 
+  d3.select('#verbs').style({'width': '100%', 'position': 'relative'}); 
+}
+
 function joblist(selector, data) {
   var items = d3.select(selector)
     .selectAll('li')
@@ -29,8 +39,6 @@ function joblist(selector, data) {
     .text(function(d) {
       return d.reward;
     });
-
-
 }
 
 d3.json('http://oddjobs.s3.amazonaws.com/odd_jobs.json', function(err, data) {
