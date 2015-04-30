@@ -104,6 +104,41 @@ header span {
 #normal, #cheap {
   display: none;
 }
+
+body.verbs-only .padder, body.jobs-only .padder {
+  margin: 0;
+  padding: 15px;
+}
+
+body.jobs-only .big-list li {
+  margin: 10px;
+  padding: 10px;
+}
+
+body.jobs-only .big-list li h2{
+  font-size: 16px;
+}
+body.jobs-only .big-list li p{
+  font-size: 14px;
+}
+
+body.jobs-only #jobs{
+  width: 100%
+}
+
+body.jobs-only #verbs{
+  display: none;
+}
+
+
+body.verbs-only #verbs{
+  position: relative;
+  width: 100%;
+}
+
+body.verbs-only #jobs{
+  display: none;
+}
 /* #jobs, #verbs { */
 
 /*   position: fixed; */
